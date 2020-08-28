@@ -24,6 +24,15 @@ Install Python requirements using Pip
 pip install -r requirements.txt
 ```
 
+Setup environment variables
+
+`API_KEY` is the API key that the Google Sheets API uses to grant accesss to reading the Google Sheet. `SHEET_ID` is the ID in the Google Sheet URL that identifies the Google Sheet. Please refer to the Tech Committee members for setting the values of the environment variables.  
+
+```bash
+set API_KEY=<api key>
+set SHEET_ID=<sheet ID>
+```
+
 Run the application using Python
 ```bash
 python app.py
