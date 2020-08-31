@@ -12,14 +12,32 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js"></script>
 
+  <link rel="stylesheet" type="text/css" href={{url_for('static', filename="css/dashboard.css")}}>
 	<script src={{url_for('static', filename="js/renderDashboard.js")}}></script>
 
 </head>
-<body>
+<body class="bg-light">
 
-	<div ng-app="dashboardApp" ng-controller="dashboardController">
-		
-		<div ng-bind-html="message"></div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <a class="navbar-brand text-white" href="#">MSU Dashboard</a>
+    <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link text-white" href="https://docs.google.com/forms/d/1X4hzUzyMB9KBOg_tgZHANZFMIFdl_SPnlvwToi7rVrk/viewform?edit_requested=true">Ask a question</a>
+      </div>
+    </div>
+  </nav>
+
+	<div class="container-fluid pt-4" ng-app="dashboardApp" ng-controller="dashboardController">
+
+    <div class="flex-row mb-3">
+      <div class="card">
+				<div class="card-body flex-wrap d-flex justify-content-around" ng-bind-html="chart"></div>
+      </div>
+    </div>
+		<div class="card-columns" ng-bind-html="content"></div>
 
 	</div>
 
