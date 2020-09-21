@@ -18,28 +18,37 @@
 </head>
 <body class="bg-light">
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-    <a class="navbar-brand text-white" href="#">MSU Dashboard</a>
-    <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link text-white" href="https://docs.google.com/forms/d/1X4hzUzyMB9KBOg_tgZHANZFMIFdl_SPnlvwToi7rVrk/viewform?edit_requested=true">Ask a question</a>
-      </div>
-    </div>
+  <!-- Navbar -->
+
+  
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="https://www.msucongress.com">Marianopolis Student Union Congress</a>
   </nav>
+  
+
+  <div class="title-div">
+    <p class="page-title">MSU Dashboard</p>
+    <center><a class="btn btn-outline-dark" href="https://docs.google.com/forms/d/1X4hzUzyMB9KBOg_tgZHANZFMIFdl_SPnlvwToi7rVrk/viewform?edit_requested=true">Ask a question</a></center>
+  </div>
+
 
 	<div class="container-fluid pt-4" ng-app="dashboardApp" ng-controller="dashboardController">
 
+    <!-- Dashboard charts --->
+
+    <!--
     <div class="flex-row mb-3">
       <div class="card">
 				<div class="card-body flex-wrap d-flex justify-content-around" ng-bind-html="chart"></div>
       </div>
     </div>
+    -->
+
 		<div class="card-columns" ng-bind-html="content"></div>
 
+  <p style="text-align: center">Created and maintained by the MSU Technology Committee.</p>
 	</div>
+
 
 
 </body>

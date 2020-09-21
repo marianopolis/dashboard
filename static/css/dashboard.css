@@ -5,3 +5,13 @@
 .full {
   width: 100%;
 }
+
+.page-title {
+	font-size: 24px;
+	text-align: center;
+}
+
+.title-div{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
