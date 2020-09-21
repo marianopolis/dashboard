@@ -2,7 +2,7 @@ function createBootstrapCard(item){
 	return (
 		`<div class="card">
 			<div class="card-header">
-				<div class="badge badge-pill badge-info">${item.Status}</div>
+				<div class="badge badge-light">${item.Status}</div>
 			</div>
 			<div class="card-body">
 				<h5 class="card-title">${item.Question}</h5>
