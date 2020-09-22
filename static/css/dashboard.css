@@ -16,8 +16,15 @@
 	padding-bottom: 40px;
 }
 
-.badge-custom1{
+.badge-custom-1{
 	background-color: rgb(218, 204, 252);
 	padding-left: 20px;
 	padding-right: 20px;
+}
+
+.body-text-1{
+	padding-left: 10%;
+	padding-right: 10%;
+	color: rgb(150, 150, 150);
+	text-align: center;
 }
