@@ -25,7 +25,7 @@ def get_questions():
 	processed_dict = dict()
 	processed_dict["data"] = list()
 
-	for content_row in response_dict["values"][1:-1]:
+	for content_row in reversed(response_dict["values"][1:-1]):
 		row_dict = dict()
 		for index in range(len(content_row)):
 			row_dict[parameters[index]] = content_row[index]
